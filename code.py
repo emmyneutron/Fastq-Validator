@@ -5,6 +5,7 @@ class fastq(object):
     seq= ["A", "T", "C", "G", "N"]
     plusline= "+"
     qual= "c"
+    len(seq)=len(qual)
     
     def _init_(self, seqHeader, seq, plusline, qual):
         print(seqHeader, seq, plusline, qual)
