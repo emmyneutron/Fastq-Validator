@@ -61,3 +61,11 @@ read length.
 10- Program validation through comparing it with the already established tool,
 e.g. FASTQValidator https://genome.sph.umich.edu/wiki/FastQValidator.
 ```
+EXPECTED DIFFICULTIES
+``` java
+- Fastq file large size and PCs’ limited computational powers
+- Reading each four lines as one read
+- For Loops
+- Dictionaries
+- Detecting the errors in each line of the reads.
+```
