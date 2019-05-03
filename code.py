@@ -1,5 +1,5 @@
 
-#1- Create a class named fastq
+#1- Create a class named SeqRead
 class SeqRead:
     def __init__(self, seqheader, seq, plusline, qual):
         self.id = seqheader
@@ -7,7 +7,11 @@ class SeqRead:
         self.plus = plus
         self.qual = qual
         
-    #len(seq)=len(qual)
+     def qualine_errors(self):
+         if len(self.qual) == len(self.seq):
+            print('valid read'.format(self.qual))
+        else:
+            print("Invalid read".format(self.qual))
     
  
 
