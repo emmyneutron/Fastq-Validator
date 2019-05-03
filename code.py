@@ -1,10 +1,11 @@
 
 #1- Create a class named fastq
-class fastq(object):
-    seqHeader= "@" 
-    seq= ["A", "T", "C", "G", "N"]
-    plusline= "+"
-    qual= "c"
+class SeqRead:
+def __init__(self, seqheader, seq, plus, qual):
+        self.id = seqheader
+        self.seq = seq
+        self.plus = plus
+        self.qual = qual
     len(seq)=len(qual)
     
     def _init_(self, seqHeader, seq, plusline, qual):
