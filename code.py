@@ -6,7 +6,7 @@ class SeqRead:
         self.plus = plus
         self.qual = qual
         
-    def read_gz(self): #open &read compreesed file
+    def read_gz(self): #open &read compressed file
         filepath= ""
 
         if filepath.endswith('.gz'):
