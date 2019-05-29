@@ -52,7 +52,7 @@ with open(file_path)as f:
 
 
         def header_control(self):
-            if self.seqheader.startswith('@')
+            if self.seqheader.startswith('@'):
                 print('valid read'.format(self.seqheader))
             else:
                 print('invalid read'.format(self.seqheader))
@@ -66,7 +66,7 @@ with open(file_path)as f:
 
 
     def qualine_errors(self):
-        if len(self.qual) == len(self.seq):
-            print('valid read'.format(self.qual))
+        if len(self.quality) == len(self.seq):
+            print('valid read'.format(self.quality))
         else:
-            print("Invalid read".format(self.qual))
+            print("Invalid read".format(self.quality))
