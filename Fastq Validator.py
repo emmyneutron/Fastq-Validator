@@ -70,3 +70,10 @@ with open(file_path)as f:
             print('valid read'.format(self.quality))
         else:
             print("Invalid read".format(self.quality))
+
+import re
+def seq_errors(self):
+    if re.match(r'[ATCGNatcgn]+$', self.seq) and len(self.seq) >= 36:
+        print('valid read'.format(self.seq))
+    else:
+        print('Invalid read'.format(self.seq))
