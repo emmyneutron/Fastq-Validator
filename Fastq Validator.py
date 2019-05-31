@@ -63,11 +63,8 @@ with open(file_path)as f, open("report.txt", 'w') as report::
                 report.write('valid read'.format(self.quality))
             else:
                 report.write("Invalid read".format(self.quality))
-print(lines)
+print(reads)
 SeqRead.header_control()
 SeqRead.seq_errors()
 SeqRead.no_plus()
 SeqRead.qualine_errors()
-
-
-
